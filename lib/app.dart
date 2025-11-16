@@ -18,24 +18,14 @@ class _InvesierAppState extends ConsumerState<InvesierApp> {
   @override
   Widget build(BuildContext context) {
     final state = ref.watch(localizationProvider);
-    if (state is LocalizationSuccess) {
-      return MaterialApp.router(
-        debugShowCheckedModeBanner: false,
-        routerConfig: router.config(),
-        locale: Locale(state.selectLang),
-        localizationsDelegates: AppLocalizations.localizationsDelegates,
-        supportedLocales: AppLocalizations.supportedLocales,
-        theme: ThemeData(
-          brightness: Brightness.dark,
-          textTheme: textTheme(),
-          fontFamily: AppStrings.manrope,
-        ),
-      );
-    }
+    final locale =
+        state is LocalizationSuccess
+            ? Locale(state.isSelectedLang)
+            : Locale('en');
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       routerConfig: router.config(),
-      locale: Locale('en'),
+      locale: locale,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       theme: ThemeData(

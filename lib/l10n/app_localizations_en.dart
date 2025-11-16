@@ -1,6 +1,5 @@
 // ignore: unused_import
 import 'package:intl/intl.dart' as intl;
-
 import 'app_localizations.dart';
 
 // ignore_for_file: type=lint
@@ -13,24 +12,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get welcometoinvesier => 'Welcome to Invesier';
 
   @override
-  String
-  get stayconnectedwiththelatestfinancialnewsmarkettrendsandexpertinsightstokeepyouinformedandahead =>
-      'Stay connected with the latest financial news, \nmarket trends, and expert insights to keep you \ninformed and ahead.';
+  String get stayconnectedwiththelatestfinancialnewsmarkettrendsandexpertinsightstokeepyouinformedandahead => 'Stay connected with the latest financial news, \nmarket trends, and expert insights to keep you \ninformed and ahead.';
 
   @override
   String get practicewithvirtualcurrency => 'Practice with Virtual \nCurrency';
 
   @override
-  String get gainexperiencethroughsimulatedtradingnorisksjustrewards =>
-      'Gain experience through simulated \ntrading. No risks, just rewards.';
+  String get gainexperiencethroughsimulatedtradingnorisksjustrewards => 'Gain experience through simulated \ntrading. No risks, just rewards.';
 
   @override
   String get joinchatslivestreams => 'Join Chats & \nLive Streams';
 
   @override
-  String
-  get talktoexpertsjoincommunitiesandgolivetoshareyourinvestmentjourney =>
-      'Talk to experts, join communities, and go \nlive to share your investment journey';
+  String get talktoexpertsjoincommunitiesandgolivetoshareyourinvestmentjourney => 'Talk to experts, join communities, and go \nlive to share your investment journey';
 
   @override
   String get skip => 'Skip';
@@ -42,8 +36,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get competeforrewards => 'Compete for Rewards';
 
   @override
-  String get climbtheleaderboardunlockperksandearnrealworldopportunities =>
-      'Climb the leaderboard, unlock perks, and \nearn real-world opportunities';
+  String get climbtheleaderboardunlockperksandearnrealworldopportunities => 'Climb the leaderboard, unlock perks, and \nearn real-world opportunities';
 
   @override
   String get getstarted => 'Get Started';
@@ -58,8 +51,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get signup => ' Sign up';
 
   @override
-  String get otpsentsuccessfullypleaseverifytocontinue =>
-      'OTP sent successfully. Please verify to continue.';
+  String get otpsentsuccessfullypleaseverifytocontinue => 'OTP sent successfully. Please verify to continue.';
 
   @override
   String get createanaccount => ' Create an account ';
@@ -128,12 +120,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get emailmustcontainat => 'Email must contain @';
 
   @override
-  String get pleaseenteravalidphonenumber =>
-      'Please enter a valid phone number';
+  String get pleaseenteravalidphonenumber => 'Please enter a valid phone number';
 
   @override
-  String get phonenumbermustbeatleastdigits =>
-      'Phone number must be at least 11 digits';
+  String get phonenumbermustbeatleastdigits => 'Phone number must be at least 11 digits';
 
   @override
   String get comingsoon => 'COMING SOON';
@@ -160,8 +150,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get pleaseenteraname => 'Please enter a name';
 
   @override
-  String get namemustbeatleastcharacters =>
-      'Name must be at least 4 characters';
+  String get namemustbeatleastcharacters => 'Name must be at least 4 characters';
 
   @override
   String get profilecompletedsuccessfully => 'Profile completed successfully';
@@ -215,15 +204,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get logout => 'Logout';
 
   @override
-  String get reportthispostandblocktheaccount =>
-      'Report this post and block the account';
+  String get reportthispostandblocktheaccount => 'Report this post and block the account';
 
   @override
   String get report => 'Report';
 
   @override
-  String get reportisdelivereddoyouwanttoblockthisaccount =>
-      'Report is delivered. Do you want to \nblock this account?';
+  String get reportisdelivereddoyouwanttoblockthisaccount => 'Report is delivered. Do you want to \nblock this account?';
 
   @override
   String get pioneers => '  Pioneers';
@@ -250,8 +237,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get posts => 'Posts';
 
   @override
-  String get selectanimagefromyourgalleryorcamera =>
-      'Select an image from your Gallery or Camera';
+  String get selectanimagefromyourgalleryorcamera => 'Select an image from your Gallery or Camera';
 
   @override
   String get wepostmoneyrelatedcontent => 'We post money related content.....';
@@ -302,15 +288,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get blockuser => 'Block user';
 
   @override
-  String get areyousureyouwanttoblockthisaccount =>
-      'Are you sure you want to block this \naccount?';
+  String get areyousureyouwanttoblockthisaccount => 'Are you sure you want to block this \naccount?';
 
   @override
   String get requestnotapproved => 'Request not approved !';
 
   @override
-  String get thiscouldbeduetomissingorincorrectinformation =>
-      'This could be due to missing or incorrect information.\nYou still You can send 2 more requests this month.';
+  String get thiscouldbeduetomissingorincorrectinformation => 'This could be due to missing or incorrect information.\nYou still You can send 2 more requests this month.';
 
   @override
   String get sendnewrequest => 'Send new Request';
@@ -319,8 +303,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get requestattemptnotice => 'Request attempt notice';
 
   @override
-  String get youcansendrequestspermonththiswilluseonecontinue =>
-      'You can send 3 requests per month. This will use one. Continue?';
+  String get youcansendrequestspermonththiswilluseonecontinue => 'You can send 3 requests per month. This will use one. Continue?';
 
   @override
   String get shouldContinue => 'Continue';
@@ -332,8 +315,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get accountdeletedsuccessfully => 'Account deleted successfully';
 
   @override
-  String get removeadsenjoyinvesierasyouwish =>
-      'Remove ads, enjoy Invesier as you wish';
+  String get removeadsenjoyinvesierasyouwish => 'Remove ads, enjoy Invesier as you wish';
 
   @override
   String get personaldetails => 'Personal details';
@@ -351,8 +333,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get confirm => 'Confirm';
 
   @override
-  String get areyousureyouwanttodeleteyouraccount =>
-      'Are you sure you want to delete your account?';
+  String get areyousureyouwanttodeleteyouraccount => 'Are you sure you want to delete your account?';
 
   @override
   String get cancel => 'Cancel';
@@ -364,12 +345,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get close => 'Close';
 
   @override
-  String get yourverificationrequesthassent =>
-      'Your verification request has been \nsent successfully !';
+  String get yourverificationrequesthassent => 'Your verification request has been \nsent successfully !';
 
   @override
-  String get wewillletyouknowwhenyourverificationrequesthasbeenreviewed =>
-      'We will let you know when your verification \nrequest has been reviewed';
+  String get wewillletyouknowwhenyourverificationrequesthasbeenreviewed => 'We will let you know when your verification \nrequest has been reviewed';
 
   @override
   String get finance => 'Finance';
@@ -399,8 +378,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get youreverified => 'You\'re verified !';
 
   @override
-  String get yourrequesthasbeenapprovedyoucannowenjoyourpremiumfeature =>
-      'Your request has been approved. You can now enjoy our premium feature';
+  String get yourrequesthasbeenapprovedyoucannowenjoyourpremiumfeature => 'Your request has been approved. You can now enjoy our premium feature';
 
   @override
   String get backtohomepage => 'Back to home page';
@@ -457,8 +435,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get submit => 'Submit';
 
   @override
-  String get reportdelivered =>
-      'Report is delivered. Do you want to \nblock this account?';
+  String get reportdelivered => 'Report is delivered. Do you want to \nblock this account?';
 
   @override
   String get no => 'No';
@@ -497,8 +474,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noforyoupoststodisplay => 'No For You posts';
 
   @override
-  String get nopostcommenttodisplay =>
-      'Everyone\'s reading, but no one\'s talking… be the first to start!';
+  String get nopostcommenttodisplay => 'Everyone\'s reading, but no one\'s talking… be the first to start!';
 
   @override
   String get postpublishsuccessfully => 'Post published successfully';
@@ -507,8 +483,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get postdeletedsuccessfully => 'Post deleted successfully';
 
   @override
-  String get pleasewritecontentoraddimagebeforesharing =>
-      'Please write content or add an image before sharing';
+  String get pleasewritecontentoraddimagebeforesharing => 'Please write content or add an image before sharing';
 
   @override
   String get pleasewritecomment => 'Please write a comment before submitting';

@@ -8,9 +8,9 @@ abstract class LocalizationState {}
 class LocalizationInitial extends LocalizationState {}
 
 class LocalizationSuccess extends LocalizationState {
-  final String selectLang;
+  final String isSelectedLang;
 
-  LocalizationSuccess({required this.selectLang});
+  LocalizationSuccess({required this.isSelectedLang});
 }
 
 class LocalizationNotifier extends Notifier<LocalizationState> {
@@ -24,17 +24,17 @@ class LocalizationNotifier extends Notifier<LocalizationState> {
       case Localization.initial:
         if (ref.read(prefsProvider).getString("lang") != null) {
           if (ref.read(prefsProvider).getString("lang") == "en") {
-            state = LocalizationSuccess(selectLang: "en");
+            state = LocalizationSuccess(isSelectedLang: "en");
           } else {
-            state = LocalizationSuccess(selectLang: "ar");
+            state = LocalizationSuccess(isSelectedLang: "ar");
           }
         }
       case Localization.english:
         ref.read(prefsProvider).setString("lang", "en");
-        state = LocalizationSuccess(selectLang: "en");
+        state = LocalizationSuccess(isSelectedLang: "en");
       case Localization.arabic:
         ref.read(prefsProvider).setString("lang", "ar");
-        state = LocalizationSuccess(selectLang: "ar");
+        state = LocalizationSuccess(isSelectedLang: "ar");
     }
   }
 }
