@@ -190,14 +190,6 @@ class _CustomConfirmOtpPageState extends ConsumerState<CustomVerifyOtpPage> {
                           .verifyOtp(
                             authMethod: widget.contactType.name,
                             otp: value,
-                            email:
-                                widget.contactType == ContactType.email
-                                    ? widget.emailController.text
-                                    : null,
-                            phone:
-                                widget.contactType == ContactType.phone
-                                    ? widget.phoneController.text
-                                    : null,
                           );
                     }
                   },

@@ -51,7 +51,6 @@ class _SignupPageState extends ConsumerState<SignupPage> {
   @override
   Widget build(BuildContext context) {
     final local = context.kAppLocalizations;
-
     final state = ref.watch(registerNewUserProvider);
     ref.listen(registerNewUserProvider, (_, state) {
       if (state is RegisterNewUserFailure) {
