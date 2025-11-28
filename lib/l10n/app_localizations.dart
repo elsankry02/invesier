@@ -1078,12 +1078,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your post was sent'**
   String get postSent;
-
-  /// No description provided for @otpSentSuccessfully.
-  ///
-  /// In en, this message translates to:
-  /// **'OTP sent successfully, please verify to continue'**
-  String get otpSentSuccessfully;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

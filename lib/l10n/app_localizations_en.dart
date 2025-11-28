@@ -499,7 +499,4 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get postSent => 'Your post was sent';
-
-  @override
-  String get otpSentSuccessfully => 'OTP sent successfully, please verify to continue';
 }

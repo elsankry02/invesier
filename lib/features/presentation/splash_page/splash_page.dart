@@ -28,10 +28,10 @@ class _SplashPageState extends ConsumerState<SplashPage> {
 
   Future<void> splash() async {
     await Future.delayed(Duration(seconds: 3), () {
-      ref.read(prefsProvider).getString("isSavedLocal");
       final prefs = ref.read(prefsProvider);
       final token = prefs.getString(AppStrings.userToken);
       final isSaved = prefs.getBool(AppStrings.skipOnboarding) ?? false;
+      prefs.getString("isSavedLocal");
 
       ref
           .read(localizationProvider.notifier)

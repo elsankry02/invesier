@@ -70,14 +70,13 @@ class _CustomConfirmOtpPageState extends ConsumerState<CustomVerifyOtpPage> {
 
   Future<void> resendCode() async {
     final isEmail = widget.contactType == ContactType.email;
-    await ref
-        .read(resendOtpProvider.notifier)
-        .resendOtp(
-          phonePrefix: isEmail ? null : "+20",
-          authMethod: widget.contactType.name,
-          email: isEmail ? widget.emailController.text : null,
-          phone: isEmail ? null : widget.phoneController.text,
-        );
+    final notifier = ref.read(resendOtpProvider.notifier);
+    await notifier.resendOtp(
+      phonePrefix: isEmail ? null : "+20",
+      authMethod: widget.contactType.name,
+      email: isEmail ? widget.emailController.text : null,
+      phone: isEmail ? null : widget.phoneController.text,
+    );
     SuccessMessage(
       context,
       message: context.kAppLocalizations.anewcodehasbeensent,
@@ -183,14 +182,13 @@ class _CustomConfirmOtpPageState extends ConsumerState<CustomVerifyOtpPage> {
                 SizedBox(height: context.height * 0.040),
                 // Signup Pinput Widget
                 CustomOtpCodeField(
-                  onChanged: (value) {
+                  onChanged: (value) async {
                     if (value.length == 6) {
-                      ref
-                          .read(verifyOtpProvider.notifier)
-                          .verifyOtp(
-                            authMethod: widget.contactType.name,
-                            otp: value,
-                          );
+                      final notifier = ref.read(verifyOtpProvider.notifier);
+                      await notifier.verifyOtp(
+                        authMethod: widget.contactType.name,
+                        otp: value,
+                      );
                     }
                   },
                   pinPutController: otpController,

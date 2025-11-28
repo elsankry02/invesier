@@ -499,7 +499,4 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get postSent => 'تم إرسال منشورك';
-
-  @override
-  String get otpSentSuccessfully => 'تم إرسال رمز التحقق بنجاح، يرجى التحقق للمتابعة';
 }

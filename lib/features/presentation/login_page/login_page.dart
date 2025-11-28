@@ -42,7 +42,6 @@ class _SignupPageState extends ConsumerState<LoginPage> {
     final notifier = ref.read(resendOtpProvider.notifier);
     final isPhone = contactType == ContactType.phone;
     await notifier.resendOtp(
-      //todo later
       phonePrefix: isPhone ? "+20" : null,
       authMethod: contactType.name,
       email: isPhone ? null : emailController.text.trim(),
